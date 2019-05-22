@@ -1,2 +1,3 @@
-# javascript-learing
-Learing Javascript
+npm install
+
+npm start

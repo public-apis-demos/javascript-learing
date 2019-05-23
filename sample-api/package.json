@@ -1,0 +1,19 @@
+{
+  "name": "sample-project-api",
+  "version": "1.0.0",
+  "description": "curd operation",
+  "main": "server.js",
+  "scripts": {
+    "devStart": "nodemon server.js"
+  },
+  "author": "srinivas",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.16.4",
+    "mongoose": "^5.5.7"
+  },
+  "devDependencies": {
+    "dotenv": "^8.0.0",
+    "nodemon": "^1.19.0"
+  }
+}

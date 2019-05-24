@@ -1,15 +1,18 @@
-import fs from "fs";
-import path from "path";
+var path = require("path");
 
-export let name = "srinivas";
-export const c = 1;
+var fs = require("fs");
+var data = fs.readFileSync(path.join(__dirname, "input.txt"));
 
-export let getUser = () => "hello world";
+console.log(data.toString());
+console.log("Program Ended");
 
-// module.exports = {
-//   name,
-//   c,
-//   getUser
-// };
+console.log(__dirname);
 
-console.log(fs, path);
+console.log(__filename);
+
+setTimeout(() => {
+  console.log("hello ");
+}, 300);
+
+
+var password =1234;

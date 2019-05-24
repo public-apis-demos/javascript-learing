@@ -4,7 +4,7 @@
   "description": "curd operation",
   "main": "server.js",
   "scripts": {
-    "devStart": "nodemon server.js"
+    "start": "nodemon server.js"
   },
   "author": "srinivas",
   "license": "MIT",

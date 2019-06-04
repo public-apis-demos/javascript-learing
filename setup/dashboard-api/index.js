@@ -1,6 +1,9 @@
 const express = require('express')
 const mongoose=require("mongoose");
+var morgan = require('morgan')
 const app = express()
+
+
 const port = 4000
 mongoose.connect('mongodb://localhost:27017/sampleApp')
 
@@ -11,6 +14,7 @@ db.once('open', () => console.log('Connected to Database'))
 const routers =require("./routes/regitster");
 const registerSchema=require('./models/register')
 
+app.use(morgan('dev'))
 app.use('/',routers)
 app.use('/register',registerSchema)
 

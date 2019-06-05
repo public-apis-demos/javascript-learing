@@ -3,6 +3,8 @@ const mongoose=require("mongoose");
 var morgan = require('morgan')
 const app = express()
 
+app.set('view engine', 'pug')
+app.set('views', './views')
 
 const port = 4000
 mongoose.connect('mongodb://localhost:27017/sampleApp')

@@ -6,11 +6,16 @@
   "scripts": {
     "test": "jasmine",
     "config": "jasmine init",
-    "singleFile":"jasmine src/index.spec.js"
+    "singleFile": "jasmine src/index.spec.js",
+    "report": "node index.js"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "jasmine": "^3.4.0"
+    "jasmine": "^3.4.0",
+    "jasmine-pretty-html-reporter": "^0.2.5"
+  },
+  "dependencies": {
+    "chai": "^4.2.0"
   }
 }

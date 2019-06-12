@@ -1,11 +1,17 @@
 {
   "name": "learn-ms",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "db connction of MS",
+  "main": "main.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node server.js",
+    "server":"node index.js"
   },
-  "author": "",
-  "license": "ISC"
+  "author": "compnay name",
+  "license": "MIT",
+  "dependencies": {
+    "async": "^3.0.1",
+    "sequelize": "^5.8.9",
+    "tedious": "^6.1.2"
+  }
 }
